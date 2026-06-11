@@ -1,0 +1,268 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitacion Dulce, Carlos, Gustavo</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+  </head>
+
+  <body class="center">
+    <!-- SOBRE DE BIENVENIDA -->
+    <div class="envelope-screen" id="envelopeScreen">
+      <div class="envelope">
+        <div class="envelope-flap"></div>
+
+        <!-- Flap inferior -->
+        <div class="wax-seal" id="openEnvelope"></div>
+      </div>
+    </div>
+
+    <div class="invitation-content hidden" id="invitationContent">
+      <!-- TODO tu contenido actual -->
+
+      <div class="content">
+        <section class="section-home">
+          <div class="home-content">
+            <img class="home-img" alt="photo" src="./assets/img/FondoP.jpg" />
+            <div class="titulo">
+              <h1>1ª Comunion, Presentación y Bautizo</h1>
+              <h2>Dulce, Carlos y Gustavo</h2>
+            </div>
+          </div>
+        </section>
+
+         
+        <section class="musica">
+          <div class="music-card">
+            <div class="album-art"></div>
+            <div class="song-title">Antes que al mio</div>
+            <div class="artist-name"></div>
+
+            <button class="play-button" id="playPauseBtn">▶</button>
+
+            <div class="progress-container">
+              <div class="progress" id="progressBar"></div>
+            </div>
+
+            <audio
+              id="audioPlayer"
+              src="./assets/music/"
+            ></audio>
+            <!-- Cambia por tu archivo mp3 -->
+          </div>
+        </section>
+       
+
+        
+
+        <section class="section-info">
+          <div class="overlay-section-info">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="box-info">
+            <div class="info-primary">
+              <p>
+                QUERIDOS AMIGOS Y FAMILIARES <br />
+                TENEMOS EL GUSTO DE INVITARLOS <br />
+                <br />
+                A LA PRIMERA COMUNIÓN, PRESENTACIÓN Y BAUTIZO DE NUESTROS PEQUEÑOS <br />
+                <br />
+              </p>
+            </div>
+
+            <div class="frase-l">
+              <h1 class="comunion">Mi Primera Comunión</h1>
+            </div>
+
+            <div class="nombre">
+              <h2>Dulce Yareli Jose Castillo</h2>
+            </div>
+
+            <div class="padrinos">
+              <p>Mis Padrinos Son:</p>
+              <h2>
+                Carlos Castillo Castillo y <br />
+                Olivia Aparicio Castillo
+              </h2>
+            </div>
+
+            <div class="frase-l">
+              <h1 class="presentacion">Mi Presentación</h1>
+            </div>
+
+            <div class="nombre">
+              <h2>Carlos Reyes Castillo</h2>
+            </div>
+
+            <div class="padrinos">
+              <p>Mis Padrino es:</p>
+              <h2>
+                Oscar Reyes Castillo
+              </h2>
+            </div>
+
+            
+            <div class="frase-l">
+              <h1 class="presentacion">Mi Bautizo</h1>
+            </div>
+
+            <div class="nombre">
+              <h2>Gustavo Reyes Castillo</h2>
+            </div>
+
+            <div class="padrinos">
+              <p>Mis Padrinos Son:</p>
+              <h2>
+                Armando Segundo Rojas y <br />
+                Juana Martinez Segundo
+              </h2>
+            </div>
+            
+            <div class="fecha">
+              <p>Se realizará el día</p>
+            </div>
+
+            <div class="date-box">
+              <h2 class="dia">SÁBADO</h2>
+              <h1>01/08/2026</h1>
+              <h2 class="hora">a las 17:00 hrs</h2>
+            </div>
+          </div>
+        </section>
+
+        <div class="timer">
+          <h1 class="timer-titulo">Solo faltan:</h1>
+          <ul class="date-time">
+            <li>
+              <div class="time_number" id="dias"></div>
+              <div class="time_txt">Días</div>
+            </li>
+            <li>
+              <div class="time_number" id="horas"></div>
+              <div class="time_txt">Horas</div>
+            </li>
+            <li>
+              <div class="time_number" id="minutos"></div>
+              <div class="time_txt">Minutos</div>
+            </li>
+            <li>
+              <div class="time_number" id="segundos"></div>
+              <div class="time_txt">Segundos</div>
+            </li>
+          </ul>
+        </div>
+
+        <section class="section-place">
+          <div class="box-place">
+            <div class="place-info center">
+              <img
+                width="75"
+                src="./assets/icons/church.svg"
+                alt="church"
+                fill="#000000"
+              />
+              <div class="place-txt">
+                <h2>Ceremonia</h2>
+                <p>
+                  <b>13:45 hrs</b> Catedral de San Juan Diego de Valle de Chalco
+                </p>
+              </div>
+            </div>
+            <a
+              class="place-btn"
+              href="https://maps.app.goo.gl/tdhuGKzYEXHhnTWP9"
+              target="_blank"
+            >
+              VER UBICACIÓN
+            </a>
+          </div>
+        </section>
+
+        <section class="section-place-salon">
+          <div class="box-place-salon">
+            <div class="place-info center">
+              <img width="120" src="./assets/icons/bola.png" alt="disco" />
+              <div class="place-txt fiesta">
+                <h2>Recepción</h2>
+                <p><b>Terminando la ceremonia</b> Calle sur 9 manzana 212 lote 5 entre Ote 36-A </p>
+              </div>
+            </div>
+            <a
+              class="place-btn"
+              href="https://maps.app.goo.gl/MsmVqSPKDqzKstwk9"
+              target="_blank"
+            >
+              VER UBICACIÓN
+            </a>
+          </div>
+        </section>
+
+        <section class="section-galeria">
+          <section class="section-info-adicional">
+            <div class="info-block info-clothes">
+              <img height="70" src="./assets/icons/Clothes.svg" alt="clothes" />
+              <h2>Vestimenta</h2>
+              <p>
+                Formal y cómodo. Nos encantará verlos brillar en este día,
+                recordando que el tono blanco se ha reservado únicamente para la
+                novia.
+              </p>
+            </div>
+
+            <div class="info-separator">
+              <img
+                width="200"
+                src="./assets/img/separador.png"
+                alt="separator"
+              />
+            </div>
+
+            <div class="info-block info-envelope">
+              <img
+                width="70"
+                src="./assets/icons/envelope.svg"
+                alt="envelope"
+              />
+              <h2>Mesa de regalos</h2>
+              <p>
+                Su presencia es nuestro mayor regalo, pero si desean tener un
+                detalle con nosotros, cualquier muestra de cariño será recibida
+                con profunda gratitud. Dejamos a su libre elección el presente
+                que deseen brindarnos para nuestro nuevo hogar.
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section class="section-message">
+          <div class="box-message">
+            <p>
+              Los mejores momentos de la vida <br />
+              merecen ser compartidos
+            </p>
+            <b>¡Gracias por acompañarnos!</b>
+            <button class="confirmar">
+              <a href="https://wa.link/nt1rqh" target="_blank"> Confirmar asistencia </a>
+            </button>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          Diseña tu invitación con
+          <a
+            href="https://www.facebook.com/profile.php?id=61568997140138"
+            target="_blank"
+            >Mirai</a
+          >
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
