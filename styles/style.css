@@ -177,8 +177,6 @@
   margin: 0;
 
   text-shadow: 4px 4px 5px rgba(226, 215, 150, 0.925);
-
-
 }
 
 .titulo h2 {
@@ -215,8 +213,7 @@
 .album-art {
   width: 100%;
   height: 160px;
-  background: url("../assets/img/")
-    center/cover no-repeat;
+  background: url("../assets/img/") center/cover no-repeat;
   background-position: top;
 
   border: 1px solid var(--gold-elegant);
@@ -301,8 +298,8 @@
   background-image: url("../assets/img/fodoInfo.png");
   width: calc(100% - 10%);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   position: relative;
 
   border: 2px solid var(--rose);
@@ -405,7 +402,7 @@
   font-family: var(--font-titulos);
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin: 0;
 }
@@ -420,12 +417,12 @@
 
 .nombre h2 {
   font-family: var(--font-subtitulos);
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin: 0;
   font-weight: 400;
-  letter-spacing: 5px;
-  margin-top: -10px;
+  letter-spacing: 1.5px;
+  margin-top: -25px;
 }
 
 .nombre h3 {
@@ -437,14 +434,21 @@
   letter-spacing: 4px;
 }
 
+.padrinos {
+  margin-top: -20px;
+}
+
 .padrinos p,
 .padres li {
   font-family: var(--font-titulos);
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
   margin-bottom: 10px;
+  background: var(--gradient-titulo);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .padrinos h2 {
@@ -454,6 +458,7 @@
   font-size: 1.1rem;
   font-family: var(--font-texto);
   font-weight: 400;
+  margin-top: -10px;
 }
 
 .dia {
@@ -747,6 +752,14 @@
   opacity: 0.8;
 }
 
+.info-separator2 img {
+  opacity: 0.8;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .info-block::after {
   content: "❦";
   font-size: 1rem;
@@ -972,14 +985,14 @@ footer a:hover {
   color: var(--rose);
 }
 
-.comunion{
+.comunion {
   color: #d662af;
 }
 
-.bautizo{
+.bautizo {
   color: #0084ff;
 }
 
-.presentacion{
+.presentacion {
   color: #0084ff;
 }
